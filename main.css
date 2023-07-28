@@ -173,13 +173,16 @@ footer p {
 
 .main-title {
 	margin-top: 30%;
-	position: relative;
-	z-index: -1;
+}
+
+.secondary-title {
+	margin-top: 15%;
 }
 
 .bold {
 	font-weight: 700;
 }
+
 .button-link {
 	padding: 16px 0px;
 	border: 2px solid #000;
@@ -206,6 +209,14 @@ footer p {
 	grid-template-columns: 300px 300px 300px;
 	/*grid-template-rows: auto auto auto;*/
 	grid-column-gap: 75px;
+	grid-row-gap: 25px;
+}
+
+.four-column-container {
+	display: grid;
+	grid-template-columns: 225px 225px 225px 225px;
+	/*grid-template-rows: auto auto auto;*/
+	grid-column-gap: 50px;
 	grid-row-gap: 25px;
 }
 

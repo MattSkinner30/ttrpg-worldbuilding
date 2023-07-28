@@ -9,13 +9,53 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-	<style> .material-symbols-outlined {font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 48}
-</style>
+	<style> .material-symbols-outlined {font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 48}</style>
 </head>
+<header>
+		<nav class="navbar">
+			<div class="logo"><span class="material-symbols-outlined"><a href="index.html">swords</a></span></div>
+			<ul class="nav-links">
+				<div class="menu">
 
-<iframe class="nav-iframe" src="nav.html"></iframe>
+				<li class="dropdown-li">
+					<a href="bt-main.html">Before Times<span class="material-symbols-outlined" style="font-size: 1em;">arrow_drop_down</span></a>
+					<ul class="dropdown-ul">
+						<li><a href="bt-kingdoms.html">Kingdoms</a></li>
+						<li><a href="bt-people.html">People of Note</a></li>
+						<li><a href="bt-orgs.html">Organizations</a></li>
+						<li><a href="bt-history.html">History</a></li>
+					</ul>
+				</li>
+				<li><a href="lt-main.html">Lost Years</a></li>
+				<li class="dropdown-li">
+					<a href="sa-main.html">Second Age<span class="material-symbols-outlined" style="font-size: 1em;">arrow_drop_down</span></a>
+					<ul class="dropdown-ul">
+						<li><a href="sa-kingdoms.html">Kingdoms</a></li>
+						<li><a href="sa-people.html">People of Note</a></li>
+						<li><a href="sa-orgs.html">Organizations</a></li>
+						<li><a href="sa-history.html">History</a></li>
+					</ul>
+				</li>
+				<li><a href="gods.html">Gods & Deities</a></li>				
+				<li class="dropdown-li">
+					<a href="realms.html">Realms & Planes<span class="material-symbols-outlined" style="font-size: 1em;">arrow_drop_down</span></a>
+					<ul class="dropdown-ul">
+						<li><a href="rp-balanced.html">Balanced Realm</a></li>
+						<li><a href="rp-celestial.html">Celestial Realm</a></li>
+						<li><a href="rp-abyssal.html">Abyssal Realm</a></li>
+						<li><a href="rp-material.html">Material Plane</a></li>
+						<li><a href="rp-feywild.html">Feywild</a></li>
+						<li><a href="rp-shadow.html">Shadow Plane</a></li>
+					</ul>
+				</li>
+				</div>
+			</ul>
+		</nav>
+</header>
+
 
 <body>
+<main>
 <h1 class="main-title">Welcome to Bern</h1>
 <p>Many call the Realm of Bern home; from heroes to villains to farmers, its population is as diverse as its history is rich. However, Bern will look quite different depending on when you visit her. The Realm’s history can be divided up roughly into three periods. The Before Times, The Lost Years, and The Second Age.</p>
 
@@ -105,7 +145,10 @@ People will often devise their schedules based on numerical patterns. This makes
 	</div>
 </div>
 
-
+<script>
+includeHTML();
+</script>
 <iframe class="footer-iframe" src="footer.html"></iframe>
+</main>
 </body>
 </html>
