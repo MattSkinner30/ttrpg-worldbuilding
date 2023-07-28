@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Before Times</title>
+	<title>Kingdoms - Before Times</title>
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,41 +18,104 @@
 
 <body>
 <h1 class="main-title">Kingdoms</h1>
-<p>For entire civilizations, the Before Times were simply just, life. Although it can perhaps be easy to assume that an age dubbed the Before Times to be simple and medieval, that would be a mistake - a reductive assumption that many in the modern day make.</p>
-<p>The Before Times was a collection of societies that were smaller, generally speaking. The land was mostly one large continent, and their weather mostly temperate.</p>
-<p>Although by modern standards their technology was quite simple, at the height of their civilization they had created Warforged, manned aircraft, and their work with arc crystals was impressive for the time.</p>
-<p>The Before Times are broken down into the following three periods:</p>
 
-<div class="three-column-container ">
-	<div>
-		<h2>Dulcar<br><span style="color: #757575;">2,450,000</h2>
-			<img src="images/flag-dulcar.jpg">
-		<p>Dulcar description<a href="dulcar.html">Read More</a></p>
 
-	</div>
+<img id="myImg" src="images/bern-map-2.jpg" alt="Map of Bern">
 
-	<div>
-		<h2>Abasement Period<br><span style="color: #757575;">1,758 - 2,731</span></h2>
-		<p>Having many of the kingdoms of Bern estblished and little of the land left unclaimed, the societies of decided to turn on each other in an effort to grow their borders. This period saw the Dulcar Legallon War, the War of the Nomads, and the War on the Dunes.</p>
-	</div>
 
-	<div>
-		<h2>Stability Period<br><span style="color: #757575;">2,731 - 3,740</h2>
-		<p>By this point the superpowers of the lands had been established. Everyone, more or less, knew their place in the world. These times were relatively peaceful, and saw an increase in technology and quality of life for the citizens of Bern.</p>
-		</p>
-	</div>
+<div id="myModal" class="modal">
+	<span class="close">&times;</span>
+	<img class="modal-content" id="img01">
+	<div id="caption"></div>
 </div>
 
+	<script>// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}</script>
+
+
 <hr>
+
 <div class="three-column-container ">
 
-		<a class="button-link" href="bt-kingdoms.html">Kingdoms</a>
-		<a class="button-link" href="bt-people.html">People of Note</a>
-		<a class="button-link" href="bt-events.html">Organizations</a>
-		<a class="button-link" href="bt-history.html">History</a>
-		<a class="button-link" href="bt-history.html">Lore</a>		
-		<a class="button-link" href="bt-races.html">Races</a>
+	<div><a class="bucket-link" href="dulcar.html">
+		<h2>Dulcar</h2>
+			<img src="images/flag-dulcar.jpg">
+		<p>Dulcar description</p>
+		<p><a class="text-link" href="dulcar.html">Read More</a></p>
+		</a>
 	</div>
+	
+	<div><a class="bucket-link" href="mezzogonia.html">
+		<h2>Mezzogonia</h2>
+			<img src="images/flag-mezzogonia.jpg">
+		<p>Dulcar description</p>
+		<p><a class="text-link" href="mezzogonia.html">Read More</a></p>
+		</a>
+	</div>
+	<div><a class="bucket-link" href="aspea.html">
+		<h2>Aspea</h2>
+			<img src="images/flag-aspea.jpg">
+		<p>Dulcar description</p>
+		<p><a class="text-link" href="aspea.html">Read More</a></p>
+		</a>
+	</div>
+
+	<div><a class="bucket-link" href="ambermere.html">
+		<h2>Ambermere</h2>
+			<img src="images/flag-ambermere.jpg">
+		<p>Dulcar description</p>
+		<p><a class="text-link" href="ambermere.html">Read More</a></p>
+		</a>
+
+	</div>
+	<div><a class="bucket-link" href="rutaiji.html">
+		<h2>Rutaiji</h2>
+			<img src="images/flag-rutaiji.jpg">
+		<p>Dulcar description</p>
+		<p><a class="text-link" href="rutaiji.html">Read More</a></p>
+		</a>
+	</div>
+	<div><a class="bucket-link" href="struaq-prya.html">
+		<h2>Struaq-Prya</h2>
+			<img src="images/flag-struaq-prya.jpg">
+		<p>Dulcar description</p>
+		<p><a class="text-link" href="struaq-prya.html">Read More</a></p>
+		</a>
+	</div>
+	<div><a class="bucket-link" href="icebound-desert.html">
+		<h2>Icebound Desert</h2>
+			<img src="images/flag-icebound-desert.jpg">
+		<p>Dulcar description</p>
+		<p><a class="text-link" href="icebound-desert.html">Read More</a></p>
+		</a>
+	</div>
+	<div><a class="bucket-link" href="isle-of-hurth.html">
+		<h2>Isle of Hurth</h2>
+			<img src="images/flag-isle-of-hurth.jpg">
+		<p>Dulcar description</p>
+		<p><a class="text-link" href="isle-of-hurth.html">Read More</a></p>
+		</a>
+	</div>
+
+</div>
 
 
 
